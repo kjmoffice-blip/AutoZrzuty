@@ -1,0 +1,20 @@
+# Python 3.13.16 Universal; Pillow łączone przez tools/build_macos.py.
+altgraph==0.17.5
+charset-normalizer==3.5.2
+macholib==1.16.4
+mss==10.2.0
+packaging==26.3
+Pillow==12.3.0
+plyer==2.1.0
+pyinstaller==6.22.3
+pyinstaller-hooks-contrib==2026.8
+pynput==1.8.2
+pyobjc-core==12.2.2
+pyobjc-framework-ApplicationServices==12.2.2
+pyobjc-framework-Cocoa==12.2.2
+pyobjc-framework-CoreText==12.2.2
+pyobjc-framework-Quartz==12.2.2
+pystray==0.19.5
+reportlab==5.0.1
+setuptools==84.0.0
+six==1.17.0

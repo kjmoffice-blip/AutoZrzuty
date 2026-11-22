@@ -1,0 +1,17 @@
+# Python 3.10+ oraz tkinter (z instalacji Pythona; nie instaluj tkinter przez pip).
+mss==10.2.0
+Pillow==12.3.0
+pynput==1.8.2
+plyer==2.1.0
+reportlab==5.0.1
+pystray==0.19.5
+# Aktywne okno w Windows; na macOS używany jest Quartz/Accessibility.
+PyGetWindow==0.0.9; sys_platform == "win32"
+# Quartz, Cocoa i AX: backendy macOS, również dla pynput/pystray.
+pyobjc-core==12.2.2; sys_platform == "darwin"
+pyobjc-framework-Cocoa==12.2.2; sys_platform == "darwin"
+pyobjc-framework-Quartz==12.2.2; sys_platform == "darwin"
+pyobjc-framework-ApplicationServices==12.2.2; sys_platform == "darwin"
+pyobjc-framework-CoreText==12.2.2; sys_platform == "darwin"
+# X11/EWMH: aktywne okno i biblioteki wejścia pod Linux.
+python-xlib==0.33; sys_platform == "linux"

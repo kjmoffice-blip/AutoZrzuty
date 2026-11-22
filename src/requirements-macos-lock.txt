@@ -1,0 +1,13 @@
+charset-normalizer==3.5.2
+mss==10.2.0
+pillow==12.3.0
+plyer==2.1.0
+pynput==1.8.2
+pyobjc-core==12.2.2
+pyobjc-framework-ApplicationServices==12.2.2
+pyobjc-framework-Cocoa==12.2.2
+pyobjc-framework-CoreText==12.2.2
+pyobjc-framework-Quartz==12.2.2
+pystray==0.19.5
+reportlab==5.0.1
+six==1.17.0
