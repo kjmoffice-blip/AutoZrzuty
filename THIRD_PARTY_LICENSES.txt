@@ -1,0 +1,56 @@
+AutoZrzuty 1.0.1 — informacje o bibliotekach
+
+Aplikacja .app zawiera wymagane biblioteki i runtime. Archiwum źródeł zawiera
+źródła pynput/pystray (LGPL) oraz skrypty odbudowy, bez środowiska roboczego.
+requirements.txt instaluje zależności przez pip. Teksty licencji są w licenses/.
+Nie usuwaj informacji o autorach/licencjach z bibliotek przy dalszym pakowaniu.
+
+mss 10.2.0 — MIT
+https://github.com/BoboTiG/python-mss
+Pillow 12.3.0 — MIT-CMU (wraz z informacjami o zależnościach w LICENSE)
+https://github.com/python-pillow/Pillow
+pynput 1.8.2 — LGPLv3
+https://github.com/moses-palmer/pynput
+plyer 2.1.0 — MIT
+https://github.com/kivy/plyer
+ReportLab 5.0.1 — BSD, patrz oryginalny LICENSE
+https://hg.reportlab.com/hg-public/reportlab
+pystray 0.19.5 — LGPLv3
+https://github.com/moses-palmer/pystray
+PyObjC 12.2.2 (Core/Cocoa/Quartz/ApplicationServices/CoreText) — MIT
+https://github.com/ronaldoussoren/pyobjc
+Teksty licencji Cocoa/Quartz/CoreText z pakietów są zachowane w licenses/.
+PyGetWindow 0.0.9 (tylko Windows) — BSD
+https://github.com/asweigart/PyGetWindow
+python-xlib 0.33 (tylko Linux) — LGPL
+https://github.com/python-xlib/python-xlib
+
+Zależności pośrednie w sprawdzonej instalacji macOS:
+six 1.17.0 — MIT, https://github.com/benjaminp/six
+charset-normalizer 3.5.2 — MIT, https://github.com/jawah/charset_normalizer
+
+Python/tkinter są dostarczane z instalacją Pythona (PSF) i Tcl/Tk, nie w tym ZIP.
+Ikona aparatu jest rysowana programowo przez aplikację; brak zewnętrznych grafik.
+Program używa systemowego fontu Helvetica lub fontu zastępczego; nie dołącza fontów.
+Zrzuty i PDF tworzy użytkownik; własność zawartości ekranu nie jest przypisywana
+przez aplikację. Nie przypisano fikcyjnego autora, właściciela praw ani firmy.
+
+Przy przyszłym bundlowaniu zewnętrznych bibliotek w .app/instalatorze należy
+zachować ich pełne licencje i warunki, w tym LGPL dla pynput/pystray/python-xlib.
+
+Wydanie DMG 1.0.1 zawiera biblioteki w .app oraz:
+• Python 3.13.16 — PSF i pozostałe historyczne licencje w licenses/Python--LICENSE.txt.
+• Tcl/Tk 8.6.18 — oryginalne license.terms w licenses/Tcl i licenses/Tk.
+• OpenSSL 3.5.9 — Apache-2.0, oryginalny LICENSE.txt w licenses/OpenSSL;
+  źródło https://github.com/openssl/openssl/tree/openssl-3.5.9.
+• PyInstaller 6.22.3 — GPL z wyjątkiem bootloadera dopuszczającym dystrybucję
+  aplikacji; pełny tekst w licenses/pyinstaller--COPYING.txt.
+• delocate 0.13.0 — narzędzie budowy do połączenia oficjalnych kół Pillow.
+
+Pillow jest połączone z oficjalnych kół arm64/x86_64; nie zmieniono jego kodu.
+Pynput i pystray: czyste źródła Python oraz licencje są dołączone w
+source-libraries/ archiwum źródłowym, aby można je było modyfikować i odbudować
+aplikację. Nie dodano szyfrowania ani blokowania zmian bibliotek.
+Wersje i skrypty odbudowy: src/requirements-build-universal-lock.txt i tools/.
+
+Mapa pierwotnych nazw licencji: licenses/README.md. Pełne teksty są zachowane bez zmian.
